@@ -1,0 +1,33 @@
+#wheel-wrapper{
+    width: 95%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(145, 145, 145);
+}
+
+#needle {
+    width: 1%;
+    height: 25%;
+    position: absolute;
+    left: calc(50% - 2.5px);
+    top: 0px;
+    z-index: 1;
+    background: rgb(255, 81, 0);
+}
+
+#wheel {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://static.wixstatic.com/media/1e5b87_07a0571e370546a58c148d89eae9fa7c~mv2.png);
+    background-size: contain;
+    transition: transform 3s;
+    transform: rotate(0deg);
+    border-radius: 50%;
+    cursor: pointer;
+}
