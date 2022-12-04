@@ -4,7 +4,7 @@ body{
 
 #wheel-wrapper{
     width: 95%;
-    max-width: 400px;
+    max-width: 500px;
     aspect-ratio: 1/1;
     margin: 20px auto;
     padding: 10px;
@@ -41,23 +41,38 @@ body{
     width: 95%;
     max-width: 1600px;
     margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
     display: flex; 
     justify-content: space-around;
-    background-color: darkmagenta;
-    perspective: 600px;
+    background-color: rgb(145, 145, 145);
 }
 
 /* 900 x 600, 1.5/1 */
-.card{
+.deck{
     width: 500px;
     margin: 10px auto;
-    display: block;
     position: relative;
     cursor: pointer;
 }
 
+.card{
+    width: 100%;
+    transition: opacity 500ms;
+}
+
+.card-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card-hidden{
+    opacity: 0;
+}
+
 @media (max-width: 1650px){
-    .card{
+    .deck{
         width: 95%;
     }
 
